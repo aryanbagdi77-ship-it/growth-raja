@@ -133,15 +133,16 @@ header.site-header{
   padding: 18px 0;
 }
 section[id], .partner-marquee-wrap, .gaming-sub{ scroll-margin-top: 96px; }
-.nav-row{ display:flex; align-items:center; justify-content:space-between; }
-.brand{ display:flex; align-items:center; gap:12px; }
+.nav-row{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.brand{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .brand svg{ width:42px; height:42px; }
 .brand-text{ font-family: var(--font-display); font-size:19px; letter-spacing:.03em; }
 .brand-text b{ color: var(--gold-light); font-weight:700; }
 
-.nav-links{ display:flex; align-items:center; gap:34px; }
+.nav-links{ display:flex; align-items:center; gap:26px; }
 .nav-links a{
   font-family: var(--font-mono); font-size: 12.5px; letter-spacing:.08em; text-transform:uppercase;
+  white-space: nowrap;
   color: var(--ink-dim);
   position:relative; padding: 4px 0;
   transition: color .5s var(--ease-slow);
@@ -164,7 +165,7 @@ section[id], .partner-marquee-wrap, .gaming-sub{ scroll-margin-top: 96px; }
 .nav-toggle[aria-expanded="true"] span:nth-child(2){ opacity:0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
 
-@media (max-width: 900px){
+@media (max-width: 1180px){
   .nav-toggle{ display:flex; }
   .nav-links{
     position: fixed; inset: 0;
@@ -231,7 +232,7 @@ section[id], .partner-marquee-wrap, .gaming-sub{ scroll-margin-top: 96px; }
 .hero-emblem svg{ width: 100%; max-width: 420px; animation: spin-slow 60s linear infinite; }
 @keyframes spin-slow{ to{ transform: rotate(360deg); } }
 .hero-emblem .crown-fixed{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-.hero-emblem .crown-fixed svg{ width: 90px; animation:none; }
+.hero-emblem .crown-fixed svg{ width: 112px; animation:none; }
 
 /* ------------------------- Decorative accent icons ------------------------- */
 .hero-deco{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:0; }
